@@ -8,4 +8,8 @@ class UsersController < ApplicationController
     render json: User.find(params[:id])
   end
 
+  def signin
+    render json: User.find_by(user_name: params["username"], password: params["password"])
+  end
+
 end

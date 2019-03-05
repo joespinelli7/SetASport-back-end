@@ -4,7 +4,8 @@ class CreateUserCourts < ActiveRecord::Migration[5.2]
       t.integer :user_id
       t.integer :court_id
       t.string :time
-
+      t.boolean :favorite, default: false
+      
       t.timestamps
     end
   end

@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 2019_02_20_035608) do
     t.integer "user_id"
     t.integer "court_id"
     t.string "time"
+    t.boolean "favorite", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
